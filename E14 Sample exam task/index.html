@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<link rel="Stylesheet" href="style.css"/>
+	<script>
+		function wyswkw()
+		{
+			document.getElementById("obrazek").src="grafika/kwadrat.png";
+		}
+		function wyswko()
+		{
+			document.getElementById("obrazek").src="grafika/kolo.png";
+		}
+		function pusty()
+		{
+			document.getElementById("obrazek").src="";
+		}
+	</script>
+</head>
+<body>
+	<div id="calosc">
+		<div id="baner"><a href="index.html">FIGURY GEOMETRYCZNE I MATEMATYCY</a></div>
+		<div id="lewy">
+		<br>
+		<h3>WYBIERZ FIGURĘ</h3><br>
+		<ol>
+			<li><a href="kwadrat.html">KWADRAT</a></li>
+				<ul type="square">
+					<li>obwód</li>
+					<li>pole</li>
+				</ul>
+			<li><a href="kolo.html">KOŁO</a></li>
+				<ul type="square">
+					<li>obwód</li>
+					<li>pole</li>
+				</ul>	
+		</ol>
+		<h3><a href="baza/matematycy.accdb" target="_blank">BAZA DANYCH</a></h3><br>
+		</div>
+		<div id="prawy">
+			<h1>FIGURY GEOMETRYCZNE</h1>
+			<p id="kw" onmouseover="wyswkw()" onmouseout="pusty()">KWADRAT</p> <p id="ko" onmouseover="wyswko()" onmouseout="pusty()">KOŁO</p>
+			<img src="" id="obrazek" alt="">
+		</div>
+		<div id="stopka">Strona stworzona przez: 12345678911</div>
+	</div>
+</body>
+</html>

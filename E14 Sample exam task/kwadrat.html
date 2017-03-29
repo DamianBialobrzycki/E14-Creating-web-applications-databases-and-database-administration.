@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<link rel="Stylesheet" href="style.css"/>
+	<script>
+		function pole()
+		{
+			var a = parseFloat(document.getElementsByName("a")[0].value);
+			
+			if(document.getElementsByName("a")[0].value == "" || isNaN(document.getElementsByName("a")[0].value) == true)
+			{
+				alert("Należy wpisać wartość liczbową");
+			}
+			else
+			{
+				var pole=a*a;
+				document.getElementById("wynik").innerHTML="P = a<sup>2</sup> = " + pole;
+			}
+		}
+		function obwod()
+		{
+			var a = parseFloat(document.getElementsByName("a")[0].value);
+			
+			if(document.getElementsByName("a")[0].value == "" || isNaN(document.getElementsByName("a")[0].value) == true)
+			{
+				alert("Należy wpisać wartość liczbową");
+			}
+			else
+			{
+				var obw=4*a;
+				document.getElementById("wynik").innerHTML="Obw = 4a = " + obw;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="calosc">
+		<div id="baner"><a href="index.html">FIGURY GEOMETRYCZNE I MATEMATYCY</a></div>
+		<div id="lewy">
+		<br>
+		<h3>WYBIERZ FIGURĘ</h3><br>
+		<ol>
+			<li><a href="kwadrat.html">KWADRAT</a></li>
+				<ul type="square">
+					<li>obwód</li>
+					<li>pole</li>
+				</ul>
+			<li><a href="kolo.html">KOŁO</a></li>
+				<ul type="square">
+					<li>obwód</li>
+					<li>pole</li>
+				</ul>	
+		</ol>
+		<h3><a href="baza/matematycy.accdb">BAZA DANYCH</a></h3><br>
+		</div>
+		<div id="prawy">
+			<h1>KWADRAT</h1>
+			<form>
+			Podaj długość boku: <input type="text" name="a"/><br>
+			<input type="button" name="polekw" value="licz pole" onclick="pole()"/>
+			<input type="button" name="obkw" value="licz obwód" onclick="obwod()"/>
+			</form>
+			<p id="wynik"></p>
+		</div>
+		<div id="stopka">Strona stworzona przez: 12345678911</div>
+	</div>
+</body>
+</html>

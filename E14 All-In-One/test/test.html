@@ -1,0 +1,37 @@
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		fieldset { background-color: yellow; width: 50% }
+	</style>
+	<script>
+		function walidacja()
+		{
+			if(document.forms[0].zad1[3].checked == true)
+			{
+				document.getElementById("pole").value = "Dobra odpowiedź!";
+				document.getElementById("pole").style["background-color"] = "lime";
+			}
+			else
+			{
+				document.getElementById("pole").value = "Zła odpowiedź!";
+				document.getElementById("pole").style["background-color"] = "red";
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="form1">
+		<fieldset>
+		<legend>Zadanie 1</legend>
+		Wybierz stolicę Polski:<br>
+		A. <input type="radio" name="zad1" />Paryż<br>
+		B. <input type="radio" name="zad1" />Madryt<br>
+		C. <input type="radio" name="zad1" />Berlin<br>
+		D. <input type="radio" name="zad1" />Warszawa<br>
+		<input type="text" value="" id="pole" />
+		<input type="button" value="Sprawdź" onclick="walidacja()"/>
+		</fieldset>
+	</form>
+</body>
+</html>

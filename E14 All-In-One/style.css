@@ -1,0 +1,67 @@
+#glowny { width: 1024px; height: 1250px; margin: auto; background-color: #AAA439}
+#naglowek { width: 1024px; height: 200px; background-color: #FFF219}
+#menu { width: 1024px; height: 50px; background-color: #403F39 }
+#js { width: 341px; height: 900px; float: left }
+#bazydanych { width: 341px; height: 900px; background-color: #464526; float: left }
+#php { width: 340px; height: 900px; float: left }
+#stopka { clear: both; width: 1024px; height: 100px; background-color: #403F39}
+#logo { font-size: 50px; text-align: center; padding: 70px }
+#logojs { width: 200px; height: 30px; background-color: black; margin-top: 20px; margin-left: 70px; color: white; font-size: 20px; text-align: center }
+#logobd { width: 200px; height: 30px; background-color: black; margin-top: 20px; margin-left: 70px; color: white; font-size: 20px; text-align: center  }
+#logophp { width: 200px; height: 30px; background-color: black; margin-top: 20px; margin-left: 70px; color: white; font-size: 20px; text-align: center  }
+
+#jstresc { width: 300px; height: 830px; margin: auto; padding: 20px; }
+#jsmat, #jsmat li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 5px;
+	height: 35px;
+} 
+#jsmat{
+	width: 300px;
+	padding: 2px 2px 2px 2px;
+}
+#jsmat a:link, a:visited{
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #403F39;
+	color: white;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	vertical-align: middle;
+	display:table-cell;
+}
+#jsmat a:hover{
+	background-color: #FFF219;
+	color: black;
+}
+
+#phptresc { width: 300px; height: 830px; margin: auto; padding: 20px; }  
+#phpmat, #phpmat li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 5px;
+	height: 35px;
+} 
+#phpmat{
+	width: 300px;
+	padding: 2px 2px 2px 2px;
+}
+#phpmat a:link, a:visited{
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #403F39;
+	color: white;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	vertical-align: middle;
+	display:table-cell;
+}
+#phpmat a:hover{
+	background-color: #FFF219;
+	color: black;
+}

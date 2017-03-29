@@ -1,0 +1,43 @@
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<script>
+	
+		function zmiana()
+		{
+			//alert("Próba");
+			document.getElementById("ten").style.color="red";
+			document.getElementsByTagName("p")[1].style.color="blue";
+			document.getElementsByName("to")[0].style.color="green";
+			document.getElementsByClassName("ta")[0].style.color="gold";
+			document.getElementsByName("te")[0].classList.add("zolty");
+			document.forms[0].elements[0].value="Tekst"; //lub document.getElementsByName("formularz1")[0].a.value="udalo sie"; lub document.forms["formularz1"]["a"].value="udalo sie";
+			document.forms[1].elements["c"].value="tekst";
+		}
+		
+
+	</script>
+	<style>
+		.zolty { color: yellow }
+	</style>
+</head>
+<body>
+	<p id="ten">tekst w 1 akapicie</p>
+	<p>tekst w 2 akapicie</p>
+	<p name="to">tekst w 3 akapicie</p>
+	<p class="ta">tekst w 4 akapicie</p>
+	<p name="te">tekst w 5 akapicie</p>
+	
+	<form name="formularz1">
+		<input type="text" value="" name="a">
+		<input type="text" value="" name="b">
+		<input type="text" value="" name="c">
+	</form>
+	<form name="formularz2">
+		<input type="text" value="" name="a">
+		<input type="text" value="" name="b">
+		<input type="text" value="" name="c">
+	</form>
+	<input type="button" value="OK" onclick="zmiana()">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<script>
+		function logowanie1()
+		{
+			var a = document.getElementsByName("log1")[0].value;
+			var b = document.getElementsByName("has1")[0].value;
+			//alert(a);
+			if(a == "admin" && b == "sala51" )
+			{
+				location.href="strona.html";
+			}
+			else
+			{
+				alert("Złe dane!");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="form1">
+		Login: <input type="text" name="log1"/><br>
+		Hasło: <input type="password" name="has1"/><br>
+		<input type="button" value="Zaloguj" onclick="logowanie1()"/>
+	</form>
+</body>
+</html>

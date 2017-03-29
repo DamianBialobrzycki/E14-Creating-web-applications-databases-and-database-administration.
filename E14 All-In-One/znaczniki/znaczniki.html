@@ -1,0 +1,59 @@
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<link rel="Stylesheet" type="text/css" href="*">
+	<style>
+		.stara {
+			width: 200px;
+			height: 100px;
+			font-size: 1.5em;
+			background-color: yellow;
+			margin: auto;
+			border: black 5px solid;
+		}
+	</style>
+	
+	<script>
+		function zmiana1(kolor)
+		{
+			//document.getElementById("akapit").style.color=kolor;
+			document.getElementById("akapit").style["color"]=kolor;
+		}
+		function zmiana2(wielkosc)
+		{
+			//document.getElementById("akapit").style.color=kolor;
+			document.getElementById("pudlo").style["font-size"]=wielkosc;//lub style.fontSize=wielkosc
+		}
+		function zmiana3(kolor)
+		{
+			document.getElementById("pudlo").style["background-color"]=kolor;
+		}
+		function zmiana_tekst()
+		{
+			document.getElementById("akapit").innerHTML=document.getElementById("txt").value;
+		}
+	</script>
+</head>
+<body>
+	<div id="pudlo" class="stara">
+		<p id="akapit">
+			BANER STRONY
+		</p>
+	</div>
+	<select onchange="zmiana1(this.value)">
+		<option value="red">czerwony</option>
+		<option value="blue">niebieski</option>
+	</select>
+	
+	<select onchange="zmiana2(this.value)">
+		<option value="8px">czcionka mała</option>
+		<option value="30px">czcionka duża</option>
+	</select>
+	<select onchange="zmiana3(this.value)">
+		<option value="green">tło zielone</option>
+		<option value="aqua">tło błękitne</option>
+	</select>
+	<br>
+	Zmiana tekstu na: <input type="text" value="" id="txt" onkeyup="zmiana_tekst()" />
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+	<script>
+		var zawodnik = 1;
+		function zmiana(miejsce)
+		{
+				if(zawodnik == 1)
+				{
+					miejsce.src = "krzyzyk.gif";
+					zawodnik = 2;
+				}
+				else if(zawodnik == 2)
+				{
+					miejsce.src = "kolko.gif";
+					zawodnik = 1;
+				}
+		}
+	</script>
+</head>
+<body>
+	<table border="1" cellspacing="0">
+		<tr>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+		</tr>
+		<tr>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+		</tr>
+		<tr>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+			<td><img src="pusty.gif" onclick="zmiana(this)"></td>
+		</tr>
+	</table>
+</body>
+</html>

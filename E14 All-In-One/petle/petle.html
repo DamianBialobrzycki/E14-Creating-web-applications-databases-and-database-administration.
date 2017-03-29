@@ -1,0 +1,28 @@
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body {background-color: hsl(120,100%,5%); color: white}
+	</style>
+	<script>
+		function napis()
+		{
+			for(i=0;i<100;i++)
+			{
+				for(j=1;j<157;j++)
+				{
+					document.write(Math.floor(Math.random()*10));
+				}
+				document.write("<br>")
+			}
+			//document.bgColor="green";
+			setInterval("location.reload()",10)
+		}
+	</script>
+</head>
+<body>
+	<script>
+		napis();
+	</script>
+</body>
+</html>

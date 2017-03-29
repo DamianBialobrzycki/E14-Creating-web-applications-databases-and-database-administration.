@@ -1,0 +1,8 @@
+#calosc {width: 1000px; height: 1000px; margin: auto}
+#baner {height:200px; width: 100%; margin: auto; background-color: #63b03c;font-family: Arial;font-size: 300%; font-variant: small-caps; color: white; text-align: center}
+#lewy {width: 20%; height: 500px; background-color: #63b03c;float: left; color: white}
+#prawy {width: 80%; height: 500px;float: left  }
+#stopka{width:100%; height:100px; background-color: #63b03c; color: white; text-align: center; clear: both}
+a {color: white}
+kw{color:black}
+ko{color:black}
